@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>TechStore - Loja de Tecnologia</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <h1>Tech <span>Store</span></h1>
+    </div>
+
+    <div class="cart" onclick="toggleCart()">
+        <p>Carrinho</p>
+        <img src="https://images.icon-icons.com/574/PNG/512/Shopping_cart_icon-icons.com_54796.png" alt="">
+        <span id="cart-count"></span>
+    </div>
+  </header>
+
+  <div class="container" id="product-container">
+    <!-- Produtos serão inseridos aqui automaticamente -->
+  </div>
+
+  <div class="cart-modal" id="cart-modal">
+    <h2>Seu Carrinho</h2>
+    <ul id="cart-items"></ul>
+    
+    <p>Total: <span id="total"></span></p>
+    
+    <div class="btns">
+      <button onclick="toggleCart()" class="btn">Fechar</button>
+      <button onclick="toggleCart()" class="btn" style="background-color: blue; color: white;">Finalizar</button>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 TechStore - Todos os direitos reservados.
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
